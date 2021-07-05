@@ -15,6 +15,7 @@ import io.github.g00fy2.quickie.QRResult.QRSuccess
 import io.github.g00fy2.quickie.QRResult.QRUserCanceled
 import io.github.g00fy2.quickie.ScanCustomCode
 import io.github.g00fy2.quickie.ScanQRCode
+import io.github.g00fy2.quickie.TestActivity
 import io.github.g00fy2.quickie.config.BarcodeFormat
 import io.github.g00fy2.quickie.config.ScannerConfig
 import io.github.g00fy2.quickie.content.QRContent
@@ -35,7 +36,8 @@ class MainActivity : AppCompatActivity() {
     setBarcodeFormatDropdown()
 
     binding.qrScannerButton.setOnClickListener {
-      scanQrCode.launch(null)
+      //scanQrCode.launch(null)
+      startActivity(Intent(this, TestActivity::class.java))
     }
 
     binding.customScannerButton.setOnClickListener {

@@ -12,5 +12,7 @@
         android:name=".QRScannerActivity"
         android:screenOrientation="behind"
         android:theme="@style/QuickieScannerActivity"/>
+
+    <activity android:name=".TestActivity"/>
   </application>
 </manifest>
